@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dawon Jun">
+    <title>Dawon_Jun_Lab2_assignment</title>
+    <style>
+        #table_pro_info{
+            border: 1px outset black;
+        }
+        #table_pro_info td {
+            border: 1px outset black;
+        }
+
+        .quantity_border_double{
+            border: double;
+        }
+
+        .subtotal_border_double{
+            border: double;
+        }
+        .total_align{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1 id="header" style="color: orange;">Order Form</h1>   
+
+        <fieldset id="fieldset_basic_info">
+            <legend id="legend_basic_info">Basic information</legend>
+            <table id="table_basic_info"> 
+                <tr>
+                    <td>
+                        <label for="student_name">Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="student_name" placeholder="Dawon" disabled size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student_email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="student_email" placeholder="jun00011@algonquinlive.com" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student_address">Address: </label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="student_address" cols="25" rows="6"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="student_postcode">Postcode: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="student_postcode"><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset id="fieldset_pro_info">
+            <legend id="legend_pro_info">Product information</legend>
+            <table id="table_pro_info">
+                <tr>
+                    <th>Product</th>
+                    <th>Part Number</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>Box</td>
+                    <td>AC100</td>
+                    <td class="quantity_border_double"></td>
+                    <td>$5</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+                <tr>
+                    <td>Coffee Table</td>
+                    <td>AC200</td>
+                    <td class="quantity_border_double"></td>
+                    <td>$100</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+                <tr>
+                    <td>Chair</td>
+                    <td>AC300</td>
+                    <td class="quantity_border_double"></td>
+                    <td>$150</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+                <tr>
+                    <td>Desk</td>
+                    <td>AC400</td>
+                    <td class="quantity_border_double"></td>
+                    <td>$120</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+                <tr>
+                    <td>Computer Table</td>
+                    <td>AC500</td>
+                    <td class="quantity_border_double"></td>
+                    <td>$130</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="total_align">Total:</td>
+                    <td class="subtotal_border_double"></td>
+                </tr>
+            </table>
+        </fieldset>
+                
+        <div id="wrapper_credit">
+            <h4 id="header_credit">Credit Card information</h4>
+            <table id="table_credit_info">
+                <tr>
+                    <td rowspan="2">
+                        <span>Card Type:</span><br>
+                        <input type="radio" id="mastercard" name="card_type">
+                        <label for="mastercard">Mastercard</label><br>
+                        <input type="radio" id="visa" name="card_type">
+                        <label for="visa">Visa</label><br>
+                        <input type="radio" id="giftcard" name="card_type">
+                        <label for="giftcard">Gift Card</label>
+                    </td>
+                    <td>
+                        <label for="card_number">Card Number: </label>
+                        <input type="text" id="card_number" name="card_number"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="card_date">Expiry date: </label>
+                        <input type="date" id="card_date" name="card_date"><br>
+                    </td>
+                </tr>
+            </table>
+
+            <table id="table_delivery">
+                <tr>
+                    <td>
+                        <label for="delivery_address"><strong>Delivery Address:</strong></label>
+                    </td>
+                    <td>
+                        <textarea name="delivery_address" id="delivery_address" cols="25" rows="6"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <button type="button" id="button_send_order">Send Order</button>
+        <button type="button" id="button_clear_form">Clear Form</button>
+
+    </div>
+</body>
+</html>

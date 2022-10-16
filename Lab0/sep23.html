@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="ex1"> <!-- Label And input for box (input for button)-->
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username"> <input type="submit" value="Submit">
+    </div>
+
+    <div class="ex2"> <!-- Label and select (size, multiple)-->
+        <label for="fruits">Choose a fruit:</label>
+        <select name="fruits" id="fruits" multiple>
+            <option value="peach">Peach</option>
+            <option value="pear">Pear</option>
+            <option value="banana" selected>Banana</option>
+            < value="apple">Apple<
+            <br>
+            <input type="submit" value="Submit">
+        </select>
+    </div>
+
+    <div class="ex3">
+        <label for="fruitss">Choose a fruit</label>
+        <select name="fruitss" id="fruitss">
+            <optgroup label="Good Fruits">
+                <option value="peach">Peach</option>
+                <option value="pear">Pear</option>
+            </optgroup>
+            <optgroup label="Bad Fruits">
+                <option value="banana">Banana</option>
+                <option value="apple">Apple</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </div>
+
+   <div class="ex4">
+        <label for="browsers">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </div>
+
+    <!-- Table Tag -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>row 1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>row 2</td>
+        </tr>
+    </table>
+
+    <table border="2">
+        <caption>Vehicle Inventory</caption>
+        <tr>
+            <th colspan="3">SUVs</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Ford</th>
+            <td>2012</td>
+            <td>Expedition</td>
+        </tr>
+        <tr>
+            <td>2011</td>
+            <td>Explorer</td>
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>
