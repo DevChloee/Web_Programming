@@ -1,0 +1,38 @@
+*{
+    font-family: serif;
+}
+
+.all_wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_all{
+    font-family: sans-serif;
+}
+
+.quot_wrapper {
+    border: solid black;
+    border-radius: 15pt;
+    height: 20%;
+    width: 85%;
+    margin: 5% auto;
+    background-color: #FCD5CE;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+}
+
+
+.button_zone {
+    display: block;
+    margin: 0 auto;
+    height: 4%;
+    border: solid black;
+    border-radius: 15pt;
+}
+
+.text_zone{
+    font-size: 40px;
+}
