@@ -11,7 +11,7 @@
     <div class="formcontainer">
         <h1>Weekly Kitten Pictures Subsription</h1>
         <hr>
-        <form id="myForm" name="form1" action="registration.html" method="get" onsubmit="validate(); return false;">
+        <form id="myForm" name="form1" action="registration.html" method="get" onsubmit="return validate();">
             <!-- You will need to write the validate function for this form. -->
 
             <div class="textfield email-check">
@@ -35,17 +35,17 @@
             </div>
 
             <div class="checkbox">
-                <input type="checkbox" name="newsletter" id="newsletter">
+                <input type="checkbox" name="newsletter" id="newsletter" onclick="get_newsletter();">
                 <label for="newsletter">I agree to receive Weekly Kitten Pictures newsletters</label>
             </div>
 
-            <div class="checkbox">
-                <input type="checkbox" name="terms" id="terms">
+            <div class="checkbox terms-check">
+                <input type="checkbox" name="terms" id="terms" onclick="check_box();">
                 <label for="terms">I agree to the terms and conditions</label>
             </div>
 
-            <button class="submit-button" type="submit">Sign-Up</button>
-            <button class="reset-button" type="reset">Reset</button>
+            <button id="get-btn" class="submit-button" type="submit">Sign-Up</button>
+            <button class="reset-button" type="reset" onclick="resetAll();" >Reset</button>
         </form>
     </div>
     <script src="./js/script.js" defer></script>
